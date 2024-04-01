@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="../static/css/global.css" />
+    <link rel="stylesheet" href="../static/css/table.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira Sans Condensed:wght@700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fira Sans Extra Condensed:wght@500&display=swap" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#sunehri").click(function () {
+                window.location.href = "/";
+            });
+        });
+        $(document).ready(function () {
+            $("#1").click(function () {
+                window.location.href = "/table_select";
+            });
+        });
+        $(document).ready(function () {
+            var currentPage = 1;
+            var rowsPerPage = 10;
+
+            function showRows() {
+                var rows = $('table tbody tr');
+                var startIndex = (currentPage - 1) * rowsPerPage;
+                var endIndex = startIndex + rowsPerPage;
+                rows.hide();
+                rows.slice(startIndex, endIndex).show();
+            }
+
+            $('#nextButton').click(function () {
+                currentPage++;
+                showRows();
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var scrollpos = sessionStorage.getItem('scrollpos');
+            if (scrollpos) {
+                window.scrollTo({
+                    top: parseInt(scrollpos),
+                    behavior: 'smooth'
+                });
+                sessionStorage.removeItem('scrollpos');
+            }
+        });
+
+        window.addEventListener("beforeunload", function (e) {
+            sessionStorage.setItem('scrollpos', window.scrollY);
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="main">
+        <header class="vector-parent">
+            <img class="vector-icon" alt="" src="../static/img/vector.svg" />
+            <div class="sunehri-kiran-wrapper">
+                <div class="sunehri-kiran" id="sunehri">sunehri kiran</div>
+            </div>
+        </header>
+        <div class="table-selection-wrapper">
+            {% set table_name = table_name.replace("_", " ") %}
+            <div class="table-selection">
+                {{ table_name }}
+            </div>
+            {% set table_name = table_name.replace(" ", "_") %}
+        </div>
+
+
+        <div class="body"></div>
+        <div class="header"></div>
+        {% if data %}
+        <table class="data">
+            <thead>
+                <tr>
+                    {% for column in columns_data %}
+                    <th>{{ column }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="pagination">
+            {% if page > 1 %}
+            <a href="{{ url_for('table', table_name=table_name, page=page-1) }}">
+                < </a>
+                    {% endif %}
+
+                    {% if (page * rows_per_page) < total_rows %} <a
+                        href="{{ url_for('table', table_name=table_name, page=page+1) }}">
+                        >
+            </a>
+            {% endif %}
+        </div>
+        {% else %}
+        <p class="noData">No data found</p>
+        {% endif %}
+        <img class="undo-icon" alt="" src="../static/img/undo.svg" id="1" />
+        <form action="/result" method="POST">
+            <div class="query_input">
+                <div class="input">
+                    <div class="input1">
+                        <label>
+                            <input class="input-child" name="query" placeholder="{{ placeholder }}" type="text" />
+                        </label>
+                    </div>
+                </div>
+                <input type="hidden" name="table_name" value="{{ table_name }}" />
+                <button class="button" id="2" type="submit">
+                    <div class="button1">
+                        <div class="button-child"></div>
+                        <b class="submit">Submit</b>
+                    </div>
+                </button>
+            </div>
+        </form>
+        <p class="description">Description of {{ table_name }}</p>
+        {% if desc %}
+        <table class="desc">
+            <thead>
+                <tr>
+                    {% for column in columns_desc %}
+                    <th>{{ column }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in desc %}
+                <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+</body>
+
+</html>

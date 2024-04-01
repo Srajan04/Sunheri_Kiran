@@ -1,0 +1,713 @@
+.light-gradient-02,
+.vector-icon {
+    position: absolute;
+    margin: 0 !important;
+}
+
+.light-gradient-02 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.vector-icon {
+    height: 200px;
+    width: 200px;
+    right: 0;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.sunehri-kiran {
+    height: 130px;
+    width: 470px;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: linear-gradient(90deg,
+    #ff5959 28.5%,
+    rgba(255, 138, 0, 0.54) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    max-width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.sunehri-kiran-wrapper,
+.vector-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.table-selection-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: -490px;
+    margin-top: 41px;
+}
+
+.table-selection {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+    background: linear-gradient(90deg,
+    #ff5959 28.5%,
+    rgba(255, 138, 0, 0.54) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    max-width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.sunehri-kiran-wrapper,
+.table-selection-wrapper {
+    flex: 1;
+}
+
+.vector-parent {
+    align-self: stretch;
+    position: relative;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: var(--font-size-17xl);
+    font-family: var(--font-playfair-display);
+}
+
+.section-1-child {
+    left: 0;
+    background: linear-gradient(96.93deg, #ff5959, #ffb800);
+    width: 350px;
+    mix-blend-mode: luminosity;
+}
+
+.section-1,
+.section-1-child,
+.table-name {
+    position: absolute;
+    top: 0;
+    height: 72px;
+}
+
+.table-name {
+    left: -20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}
+
+.section-1 {
+    left: 0;
+    border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+    width: 350px;
+    overflow: hidden;
+    mix-blend-mode: luminosity;
+}
+
+.lorem-ipsum {
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    display: inline-block;
+    width: 315px;
+    height: 145px;
+    -webkit-text-fill-color: #6a6a6a;
+}
+
+.lorem-ipsum-wrapper {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+    background: linear-gradient(115.4deg, #c0bebe, rgba(255, 255, 255, 0));
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.8) inset;
+    backdrop-filter: blur(12px);
+    width: 350px;
+    height: 178px;
+    overflow: hidden;
+    text-transform: capitalize;
+    mix-blend-mode: luminosity;
+    text-align: left;
+    font-family: var(--font-fira-sans-extra-condensed);
+}
+
+.section-13,
+.section-14 {
+    position: absolute;
+    top: 906px;
+    left: 171px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    height: 250px;
+    border-radius: var(--br-3xs) var(--br-3xs) var(--br-3xs) var(--br-3xs);
+}
+
+.section-14 {
+    left: 574px;
+}
+
+.lorem-ipsum2 {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    display: inline-block;
+    width: 315px;
+    height: 145px;
+    -webkit-text-fill-color: #6a6a6a;
+
+}
+
+.section-12,
+.section-5,
+.section-6 {
+    position: absolute;
+    top: 24px;
+    left: 168px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    height: 250px;
+    border-radius: var(--br-3xs) var(--br-3xs) var(--br-3xs) var(--br-3xs);
+
+}
+
+.section-5 {
+    top: 313px;
+}
+
+.section-6 {
+    top: 594px;
+}
+
+.section-10,
+.section-112,
+.section-121,
+.section-2,
+.section-3,
+.section-7,
+.section-8,
+.section-9 {
+    position: absolute;
+    top: 313px;
+    left: 570px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    height: 250px;
+    border-radius: var(--br-3xs) var(--br-3xs) var(--br-3xs) var(--br-3xs);
+
+}
+
+.section-10,
+.section-112,
+.section-121,
+.section-2,
+.section-3,
+.section-8,
+.section-9 {
+    left: 972px;
+}
+
+.section-10,
+.section-112,
+.section-121,
+.section-2,
+.section-3,
+.section-9 {
+    left: 1374px;
+}
+
+.section-10,
+.section-112,
+.section-121,
+.section-2,
+.section-3 {
+    top: 593px;
+    left: 570px;
+}
+
+.section-112,
+.section-121,
+.section-2,
+.section-3 {
+    left: 972px;
+}
+
+.section-121,
+.section-2,
+.section-3 {
+    left: 1374px;
+}
+
+.section-2,
+.section-3 {
+    top: 24px;
+    left: 570px;
+}
+
+.section-3 {
+    left: 972px;
+}
+
+.lorem-ipsum13 {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    display: inline-block;
+    width: 315px;
+    -webkit-text-fill-color: #6a6a6a;
+    height: 145px;
+}
+
+.section-4 {
+    position: absolute;
+    top: 24px;
+    left: 1374px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    width: 350px;
+    height: 250px;
+}
+
+.console,
+.vector-icon {
+    position: absolute;
+    overflow: hidden;
+}
+
+.console {
+    top: 201px;
+    left: 0;
+    width: 1920px;
+    height: 1204px;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-fira-sans-condensed);
+}
+
+.start {
+    width: 100%;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    height: 1500px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 42px;
+    color: var(--color-white);
+    background-image: url("../../static/img/light-gradient-02.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: var(--font-playfair-display);
+}
+
+.vector-icon1 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+.expand {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 295px;
+    left: 1211px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon2 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand1 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 575px;
+    left: 1210px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon3 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand2 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 808px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon4 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand3 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 295px;
+    left: 805px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon5 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand4 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 575px;
+    left: 804px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon6 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+.expand5 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 1211px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon7 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand6 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 406px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon8 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand7 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 295px;
+    left: 403px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon9 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+.expand8 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 575px;
+    left: 402px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon10 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+.expand9 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 888px;
+    left: 402px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon11 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+.expand10 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon12 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand11 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 295px;
+    left: 1px;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon13 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+.expand12 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 575px;
+    left: 0;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.vector-icon14 {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.expand13 {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 888px;
+    left: 0;
+    border-radius: var(--br-11xs);
+    width: 30px;
+    height: 30px;
+}
+
+.redirect {
+    position: absolute;
+    top: 39px;
+    left: 476px;
+    width: 1241px;
+    height: 918px;
+}
